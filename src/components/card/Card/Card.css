@@ -1,0 +1,100 @@
+.card {
+	padding: 0 10px;
+	border: 1px solid #e6ecf0;
+	transition: transform 0.2s ease;
+}
+.card:hover {
+	transform: scaleY(1.025);
+	background-color: transparent;
+}
+
+.card i {
+	margin: 10px;
+	color: #697a89;
+	font-size: 22px;
+	cursor: pointer;
+}
+.card .fa-user {
+	font-size: 25px;
+	border: 2px solid #8796a2;
+	padding: 8px;
+	border-radius: 50%;
+}
+.card__user {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+	padding: 0;
+}
+.card__user h4 span {
+	color: #8796a2;
+	font-size: 14px;
+}
+.card__actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.card__actions .fa-edit,
+.card__actions .fa-trash-alt {
+	color: #92d0f0;
+}
+.card__actions .fa-edit:hover {
+	color: #21a2f2;
+}
+.card__actions .fa-trash-alt:hover {
+	color: #c73e3e;
+}
+
+.card__actions .fa-comment:hover {
+	color: #21a2f2;
+}
+
+.card__actions .fa-heart:active,
+.card__actions .fa-heart:hover {
+	color: #e44d7c;
+}
+
+.card__actions .fa-retweet:hover {
+	color: #21c169;
+}
+
+.card__time {
+	font-size: 16px !important;
+	font-weight: 400;
+}
+
+.card__btn {
+	border: none;
+	outline: none;
+	margin: 2px;
+	width: 60px;
+	height: 30px;
+	color: #fff;
+	border-radius: 3px;
+	font-weight: lighter;
+	cursor: pointer;
+	margin-bottom: 10px;
+	transition: all 0.2s ease;
+}
+.card__btn:hover {
+	transform: scale(1.05);
+}
+.card__btn.save {
+	background: #109de4;
+}
+.card__btn.cancel {
+	background: grey;
+}
+
+.card__edit textarea {
+	width: 100%;
+	height: 100px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	color: #555;
+	background: #fcf8f3 !important;
+	padding: 15px;
+	resize: none;
+}
